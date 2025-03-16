@@ -1,9 +1,9 @@
 import React from "react"; 
 import { Link } from "react-router-dom";
-import { Card } from "@mui/material";
+import { Button, Card } from "@mui/material";
 import "./App.css";
 
-function WaitlistStatus({ users }) {
+function WaitlistStatus({ users, clearWaitlist }) {
 return (
    <Card className="list-card">
          <h2>📋 Waitlist Status</h2>
@@ -15,6 +15,7 @@ return (
              </li>
            ))}
          </ul>
+         <Button variant="contained" color="secondary" onClick={clearWaitlist}>Clear Waitlist</Button>
          <Link to="/" className="link">⬅ Back to Registration</Link>
        </Card>
 );

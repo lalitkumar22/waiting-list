@@ -22,11 +22,22 @@ function App() {
             : [...priorityUsers, ...generalUsers, { name, priority }];
         });
     };
+    const clearWaitlist = () => {
+        setUsers([]);
+        localStorage.removeItem("waitlist");
+    };
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            addUser(`Guest ${users.length + 1}`, false);
+        }, 10000);
+        return () => clearInterval(interval);
+    }, [users]);
     return(
         <Router>
             <Routes>
                 <Route path="/" element={<WaitlistForm addUser={addUser} /> } />
-                <Route path="/Waitlist" element={<WaitlistStatus users={users}/>}/>
+                <Route path="/Waitlist" element={<WaitlistStatus users={users} clearWaitlist={clearWaitlist}/>}/>
             </Routes>
         </Router>
     );
