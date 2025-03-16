@@ -1,0 +1,98 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff00bf, #3a3a3a);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Centering Containers */
+  .form-card, .list-card {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    text-align: center;
+  }
+  
+  /* Heading Styles */
+  h2 {
+    color: #ff00bf;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* Input Fields */
+  .MuiTextField-root {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .MuiOutlinedInput-root {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #ff00bf;
+  }
+  
+  .MuiInputLabel-root {
+    color: #ccc !important;
+  }
+  
+  /* Buttons */
+  .MuiButton-containedPrimary {
+    background-color: #ff00bf !important;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .MuiButton-containedPrimary:hover {
+    transform: scale(1.05);
+    background-color: #e600ac !important;
+  }
+  
+  /* Waitlist List */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  /* Links */
+  a {
+    color: #ff00bf;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: #ff66cc;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .form-card, .list-card {
+      max-width: 90%;
+    }
+  }
+  
