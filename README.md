@@ -10,6 +10,10 @@ https://github.com/user-attachments/assets/26f10cc9-e338-40df-bf6e-e0f9efa9c54a
 
 ![waiting list](https://github.com/user-attachments/assets/b0a66670-6d2b-440f-a49a-90efe3bdca74)
 
+# add external package before run:
+->for react-router-dom: "npm install react-router-dom" , 
+
+->for material ui: "npm install @mui/material @emotion/react @emotion/styled"
 
 # Gettin!
 g Started with Create React App
